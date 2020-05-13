@@ -22,7 +22,4 @@ public class RepositoryConfig implements RepositoryRestConfigurer{
 			.toArray(Class[]::new));
 		
 	}
-
-	
-	
 }

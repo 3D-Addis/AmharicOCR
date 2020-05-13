@@ -1,0 +1,15 @@
+
+<table border = "1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let property of properties">
+            <td>{{property.address}}</td>
+            <td>{{property.auction_time}}</td>
+        </tr>
+    </tbody>
+</table>

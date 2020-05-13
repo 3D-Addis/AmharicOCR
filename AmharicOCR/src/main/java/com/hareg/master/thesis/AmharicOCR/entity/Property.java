@@ -45,12 +45,13 @@ public class Property {
 		@JsonProperty("address")
 		private String address;
 
-		@JsonProperty("action_date")
-		private Date actionDate;
+		@JsonProperty("auction_date")
+		private Date auctionDate;
 
-		@JsonProperty("action_time")
-		private String actionTime;
+		@JsonProperty("auction_time")
+		private String auctionTime;
 		
+		@JsonProperty("estimate")
 		private BigDecimal estimate;
 
 		@JsonProperty("date_created")
