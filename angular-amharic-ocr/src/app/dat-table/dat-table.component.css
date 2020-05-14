@@ -1,0 +1,60 @@
+.full-width-table {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.mat-header-cell {
+  color: rgb(73, 8, 133);
+  font-size: large;
+  word-wrap: break-word !important;
+  white-space: unset !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  word-break: break-word;
+
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.mat-column-id {
+  flex: 0 0 8% !important;
+  width: 8% !important;
+}
+
+.mat-column-fileNumber {
+  flex: 0 0 10% !important;
+  width: 10% !important;
+}
+
+.mat-column-seller {
+  flex: 0 0 17% !important;
+  width: 17% !important;
+}
+
+.mat-column-discription {
+  flex: 0 0 15% !important;
+  width: 15% !important;
+}
+
+.mat-column-address {
+  flex: 0 0 17% !important;
+  width: 17% !important;
+}
+
+.mat-column-auctionDate {
+  flex: 0 0 13% !important;
+  width: 13% !important;
+}
+
+.mat-column-actionTime {
+  flex: 0 0 8% !important;
+  width: 8% !important;
+}
+
+.mat-column-estimate {
+  flex: 0 0 12% !important;
+  width: 12% !important;
+}

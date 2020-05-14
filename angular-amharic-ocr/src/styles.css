@@ -1,8 +1,2 @@
-@font-face{
-    font-family: 'Roboto Mono';
-    src: url(/assets/fonts/Roboto_Mono/RobotoMono-Regular.ttf) format("truetype");
-}
-
-body{
-    h1: 'Roboto Mono';
-}
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";

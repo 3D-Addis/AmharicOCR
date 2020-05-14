@@ -1,15 +1,27 @@
 
-<table border = "1">
+<table border = "1" class="table">
     <thead>
         <tr>
-            <th>Name</th>
-            <th>Address</th>
+            <th>ተ.ቁ</th>
+            <th>የአፈ/መ.ቁ</th>
+            <th>የፍ/ባለመብት እና የፍ/ባለእዳ</th>
+            <th>በጨረታው የሚሸጠው ንብረት</th>
+            <th>የንብረት አድራሻ</th>
+            <th>የሓራጅ ቀን እና ወር አ.ም</th>
+            <th>ሳአት</th>
+            <th>የንብረት ግምት</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let property of properties">
+            <td>{{property.Id}}</td>
+            <td>{{property.file_number}}</td>
+            <td>{{property.seller}}</td>
+            <td>{{property.discription}}</td>
             <td>{{property.address}}</td>
+            <td>{{property.auction_date}}</td>
             <td>{{property.auction_time}}</td>
+            <td>{{property.estimate}}</td>
         </tr>
     </tbody>
 </table>
