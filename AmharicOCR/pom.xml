@@ -56,6 +56,23 @@
 		    <artifactId>spring-data-jpa</artifactId>
 		    <version>2.2.1.RELEASE</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j -->
+		<dependency>
+	    	<groupId>net.sourceforge.tess4j</groupId>
+	    	<artifactId>tess4j</artifactId>
+	    	<version>4.2.1</version>
+		</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.openpnp/opencv -->
+<dependency>
+    <groupId>org.openpnp</groupId>
+    <artifactId>opencv</artifactId>
+    <version>3.4.2-0</version>
+</dependency>
+
+
+
 	</dependencies>
 
 	<build>

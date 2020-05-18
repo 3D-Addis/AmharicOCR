@@ -1,3 +1,8 @@
+<div class="form-group">
+    <label for="file">File Upload</label>
+    <input type="file" class="form-control" accept="image/**" (change)="onSelectFile($event)" style="height: 100%">
+</div>
+<button type="submit" class="btn btn-success" (click)="saveImage()">Process Image</button>
 
 <table border = "1" class="table">
     <thead>

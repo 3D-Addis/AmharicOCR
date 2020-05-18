@@ -1,12 +1,7 @@
 package com.hareg.master.thesis.AmharicOCR.entity;
 
-import java.math.BigDecimal;
-import java.sql.Time;
-import java.time.LocalDate;
-import java.time.LocalTime;
 import java.util.Date;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -23,15 +18,14 @@ import lombok.ToString;
 
 @Entity
 @Table(name="tbl_properties")
-@Setter
-@Getter
+
 @ToString
 public class Property {
 
 		@Id
 		@JsonProperty("Id")
 		@GeneratedValue(strategy=GenerationType.IDENTITY)
-		private Long id;
+		private int id;
 		
 		@JsonProperty("file_number")
 		private String fileNumber;
@@ -46,13 +40,13 @@ public class Property {
 		private String address;
 
 		@JsonProperty("auction_date")
-		private Date auctionDate;
+		private String auctionDate;
 
 		@JsonProperty("auction_time")
 		private String auctionTime;
 		
 		@JsonProperty("estimate")
-		private BigDecimal estimate;
+		private String estimate;
 
 		@JsonProperty("date_created")
 		private Date dateCreated;
@@ -63,5 +57,74 @@ public class Property {
 		@ManyToOne
 		@JoinColumn(name="category_id", nullable=false)
 		private PropertyCategory category;
+		
+		
+		public Property() {
+		}
+
+		public int getId() {
+			return id;
+		}
+
+		public void setId(int id) {
+			this.id = id;
+		}
+
+		public String getFileNumber() {
+			return fileNumber;
+		}
+
+		public void setFileNumber(String fileNumber) {
+			this.fileNumber = fileNumber;
+		}
+
+		public String getSeller() {
+			return seller;
+		}
+
+		public void setSeller(String seller) {
+			this.seller = seller;
+		}
+
+		public String getDiscription() {
+			return discription;
+		}
+
+		public void setDiscription(String discription) {
+			this.discription = discription;
+		}
+
+		public String getAddress() {
+			return address;
+		}
+
+		public void setAddress(String address) {
+			this.address = address;
+		}
+
+		public String getAuctionDate() {
+			return auctionDate;
+		}
+
+		public void setAuctionDate(String auctionDate) {
+			this.auctionDate = auctionDate;
+		}
+
+		public String getAuctionTime() {
+			return auctionTime;
+		}
+
+		public void setAuctionTime(String auctionTime) {
+			this.auctionTime = auctionTime;
+		}
+
+		public String getEstimate() {
+			return estimate;
+		}
+
+		public void setEstimate(String estimate) {
+			this.estimate = estimate;
+		}
+		
 		
 }
