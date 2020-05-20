@@ -1,6 +1,7 @@
 package com.hareg.master.thesis.AmharicOCR.entity;
 
 import java.util.Date;
+import java.util.HashMap;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,6 +12,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.hareg.master.thesis.AmharicOCR.services.RectContour;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -57,6 +59,8 @@ public class Property {
 		@ManyToOne
 		@JoinColumn(name="category_id", nullable=false)
 		private PropertyCategory category;
+		
+		private HashMap <String, RectContour> contourCollection;
 		
 		
 		public Property() {
@@ -124,6 +128,14 @@ public class Property {
 
 		public void setEstimate(String estimate) {
 			this.estimate = estimate;
+		}
+
+		public HashMap<String, RectContour> getContourCollection() {
+			return contourCollection;
+		}
+
+		public void setContourCollection(HashMap<String, RectContour> contourCollection) {
+			this.contourCollection = contourCollection;
 		}
 		
 		

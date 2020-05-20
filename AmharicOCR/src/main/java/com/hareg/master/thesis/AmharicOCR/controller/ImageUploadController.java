@@ -47,17 +47,17 @@ public class ImageUploadController {
 	public List<Property> uplaodImage(@RequestParam("file") MultipartFile file) throws IOException {
 
 		System.out.println("Original Image Byte Size - " + file.getBytes().length);
-		String folder = "C:\\Dev 2020\\angular-java\\OCR Tool for Hareg\\AmharicOCR\\AmharicOCR\\src\\main\\resources\\photos\\new.png";
-		Files.write(Paths.get(folder), file.getBytes());
+		String fileLocation = "C:\\Dev 2020\\angular-java\\OCR Tool for Hareg\\AmharicOCR\\AmharicOCR\\src\\main\\resources\\photos\\new.jpg";
+		Files.write(Paths.get(fileLocation), file.getBytes());
 
 		
 		OpenCV.loadShared();
 		
-		byte [] data = file.getBytes();
-		ByteArrayInputStream bis = new ByteArrayInputStream(data);
-		BufferedImage bImage2 = ImageIO.read(bis);
+//		byte [] data = file.getBytes();
+//		ByteArrayInputStream bis = new ByteArrayInputStream(data);
+//		BufferedImage bImage2 = ImageIO.read(bis);
 		
-		return ImageProcessing.processImage(); //bImage2);
+		return ImageProcessing.processImage(fileLocation);
 		
 //		String default_file = "C:\\Users\\Yonas\\Pictures\\ocrTestData1.jpg";
 //		Mat srcMat = Imgcodecs.imread(default_file);

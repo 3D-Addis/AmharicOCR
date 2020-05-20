@@ -7,6 +7,6 @@ public class TestClass {
     public static void main(String[] args) {
         // Load the native library.
 		OpenCV.loadShared();
-        ImageProcessing.processImage();
+        ImageProcessing.processImage("C:\\\\Users\\\\Yonas\\\\Pictures\\\\ocrTestData3.jpg");
     }
 }
